@@ -1,0 +1,30 @@
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  user-select: none;
+
+  .item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background-color: teal;
+    color: beige;
+
+    cursor: move;
+  }
+}
+
+.dropList {
+  position: relative;
+}
+
+.dragItemHandle {
+  position: fixed;
+  box-shadow: 3px 3px 10px rgba(black, 0.5);
+  pointer-events: none;
+}
